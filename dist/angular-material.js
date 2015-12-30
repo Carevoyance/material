@@ -21991,7 +21991,7 @@ function MenuProvider($$interimElementProvider) {
       if (options.hasBackdrop) {
         options.backdrop = $mdUtil.createBackdrop(scope, "md-menu-backdrop md-click-catcher");
 
-        $animate.enter(options.backdrop, $document[0].body);
+        $animate.enter(options.backdrop, $document.find('body'));
       }
 
       /**
